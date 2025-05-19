@@ -1,0 +1,99 @@
+body {
+  background: #131b21;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+
+#Footer_group_1_,
+[id^="PinkFlowerGroup"],
+[id^="BaseGroup"] path,
+[id^="LeafGroup"] path,
+path[id^="Stroke"],
+g[id^="BudGroup"] g[id^="BudGroup"] g[id^="Bud"],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^="Dots"],
+[id^="Flourish"] {
+  visibility: hidden;
+}
+
+.Msg{
+  position: fixed;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+h1{
+  font-size: 5vh;
+  color: aliceblue;
+}
+
+button{
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #5c1374; /* Azul claro que combina com azul escuro */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+#modalFundo {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 9999;
+}
+
+/* Caixa do alerta */
+#modalAlerta {
+  background: linear-gradient(135deg, #3b5998, #192f6a);
+  color: white;
+  width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #8a3f70;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png")
+}
+
+#modalAlerta h2 {
+  margin-top: 0;
+}
+
+#botaoFechar {
+  margin-top: 15px;
+  background: #fff;
+  color: #192f6a;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
